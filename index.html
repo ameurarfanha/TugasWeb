@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Order</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px;
+            background: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            width: 950px;
+            margin: auto;
+        }
+
+        /* JUDUL */
+        .judul {
+            background: #2864a0;
+            color: white;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            padding: 18px;
+            letter-spacing: 1px;
+        }
+
+        /* BAGIAN UTAMA */
+        .order {
+            display: flex;
+            border-left: 1px solid #555;
+            border-right: 1px solid #555;
+            border-bottom: 1px solid #555;
+        }
+
+        /* TABEL BARANG */
+        table {
+            border-collapse: collapse;
+        }
+
+        .barang {
+            width: 70%;
+        }
+
+        .barang th {
+            background: #39964a;
+            color: white;
+            height: 45px;
+            border: 1px solid #555;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .barang td {
+            border: 1px solid #555;
+            height: 43px;
+            padding: 8px;
+            font-size: 13px;
+        }
+
+        .no {
+            width: 55px;
+            text-align: center;
+        }
+
+        .nama {
+            width: 330px;
+            font-weight: bold;
+        }
+
+        .qty {
+            width: 65px;
+            text-align: center;
+        }
+
+        .harga {
+            width: 130px;
+            text-align: right;
+            padding-right: 15px !important;
+        }
+
+        /* WARNA BARIS */
+        .merah {
+            background: #ed3434;
+        }
+
+        .kuning {
+            background: #ffe500;
+        }
+
+        /* TOTAL */
+        .total-label {
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .total {
+            font-weight: bold;
+            text-align: right;
+            padding-right: 15px !important;
+        }
+
+        /* EMAIL NOTE */
+        .email {
+            width: 30%;
+            padding: 20px;
+        }
+
+        .email-title {
+            background: #39964a;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            padding: 12px;
+            border: 1px solid #555;
+        }
+
+        .email-box {
+            margin-top: 20px;
+            border: 1px solid #777;
+        }
+
+        .mailbox {
+            display: flex;
+            justify-content: space-between;
+            background: #df4960;
+            color: white;
+            padding: 12px;
+            font-weight: bold;
+        }
+
+        .email-info {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .email-info td {
+            border: 1px solid #999;
+            padding: 9px;
+            font-size: 13px;
+        }
+
+        .email-info td:first-child {
+            font-weight: bold;
+            width: 60%;
+        }
+
+        .catatan {
+            height: 100px;
+            padding: 10px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- JUDUL -->
+    <div class="judul">
+        ONLINE ORDER
+    </div>
+
+    <div class="order">
+
+        <!-- TABEL BARANG -->
+        <table class="barang">
+
+            <tr>
+                <th class="no">NO</th>
+                <th class="nama">Nama Barang</th>
+                <th class="qty">QTY</th>
+                <th class="harga">Harga (Rp)</th>
+            </tr>
+
+            <tr class="merah">
+                <td class="no">1</td>
+                <td class="nama">DEAM 2 GB</td>
+                <td class="qty">1</td>
+                <td class="harga">45.000</td>
+            </tr>
+
+            <tr class="kuning">
+                <td class="no">2</td>
+                <td class="nama">DEAM/COMPORT 4 GB</td>
+                <td class="qty">2</td>
+                <td class="harga">50.000</td>
+            </tr>
+
+            <tr class="merah">
+                <td class="no">3</td>
+                <td class="nama">COMPORT 6 GB</td>
+                <td class="qty">1</td>
+                <td class="harga">60.000</td>
+            </tr>
+
+            <tr class="kuning">
+                <td class="no">4</td>
+                <td class="nama">APACER 4GB / 8GB / 16GB</td>
+                <td class="qty">1</td>
+                <td class="harga">74.000</td>
+            </tr>
+
+            <tr class="merah">
+                <td class="no">5</td>
+                <td class="nama">DEAM/FLASH 250 GB USB 3.0</td>
+                <td class="qty">1</td>
+                <td class="harga">765.000</td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="total-label">
+                    TOTAL BAYAR
+                </td>
+
+                <td class="qty">
+                    6
+                </td>
+
+                <td class="total">
+                    994.000
+                </td>
+            </tr>
+
+        </table>
+
+
+        <!-- EMAIL ACCOUNT NOTE -->
+        <div class="email">
+
+            <div class="email-title">
+                Email Account Note
+            </div>
+
+            <div class="email-box">
+
+                <div class="mailbox">
+                    <span>Mail Box</span>
+                    <span>10 GB</span>
+                </div>
+
+                <table class="email-info">
+
+                    <tr>
+                        <td>Webmail</td>
+                        <td>Yes</td>
+                    </tr>
+
+                    <tr>
+                        <td>POP 3</td>
+                        <td>No</td>
+                    </tr>
+
+                </table>
+
+                <div class="catatan">
+                    <!-- Tempat catatan -->
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
